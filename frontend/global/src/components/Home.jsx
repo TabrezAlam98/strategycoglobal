@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {Link} from 'react-router-dom'
 import { Box, SimpleGrid, Image, Text, Flex ,Input,Button} from "@chakra-ui/react";
 import Search from "./Search";
 
@@ -20,13 +21,17 @@ const Home = () => {
     <SimpleGrid columns={[1, 2, 4]} spacing="20px" p="5px">
       {data.map((el) => {
         return (
-          <Box border="1px" borderRadius="5px">
+          
+          <Box border="1px" borderRadius="5px" key={el.imdbID}>
+       <Link to ={`/movies/${el.imdbID}`}>
+       
             <Image
               src={el.Poster}
               height="300px"
               width="100%"
               borderRadius="5px"
             />
+            
             <Text textAlign={"left"} marginLeft="5px" >
               {el.Title}
             </Text>
@@ -39,7 +44,10 @@ const Home = () => {
                 {el.Year}
               </Text>
             </Flex>
+            </Link> 
           </Box>
+     
+          
         );
       })}
     </SimpleGrid>
