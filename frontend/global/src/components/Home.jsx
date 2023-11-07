@@ -33,15 +33,15 @@ const Home = () => {
             />
             
             <Text textAlign={"left"} marginLeft="5px" >
-              {el.Title}
+             {el.Title}
             </Text>
             <Flex fontSize='sm' >
               <Text width="50%" textAlign={"left"} marginLeft="5px">
-                {el.Type}
+                type - {el.Type}
               </Text>
 
               <Text width="50%" textAlign={"left"} marginLeft="5px">
-                {el.Year}
+                year - {el.Year}
               </Text>
             </Flex>
             </Link> 
