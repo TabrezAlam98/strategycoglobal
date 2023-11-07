@@ -9,7 +9,7 @@ Have a look ⬇️
 
 ## Tech Stack
 
-react, ChakarUI
+react, ChakraUI
 
 **Deploying:** Vercel
 
@@ -28,7 +28,7 @@ Search any movie
 GitHub:- https://github.com/TabrezAlam98/strategycoglobal
 
 
-## Screenshots
+
 
 
 
